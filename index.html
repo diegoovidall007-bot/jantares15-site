@@ -45,6 +45,13 @@ section{padding:56px 0}
 .hero h1 em{font-style:normal;color:var(--accent)}
 .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
 .fine{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.versus{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0 16px;max-width:440px}
+.versus div{border:1px solid var(--line);border-radius:12px;padding:12px}
+.versus span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.versus b{display:block;font-family:var(--display);font-weight:460;font-size:32px;line-height:1.1;margin-top:4px}
+.versus small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.versus .us{background:var(--night);color:var(--night-ink);border-color:var(--night)}
+.versus .us span,.versus .us small{color:var(--night-accent)}
 .phone{width:min(260px,72vw);margin:28px auto 0;background:var(--night);border-radius:36px;padding:8px}
 .phone img{width:100%;aspect-ratio:1/2;object-fit:contain;object-position:center top;background:var(--paper);border-radius:28px}
 .hero-grid{display:grid;gap:8px}
@@ -131,8 +138,12 @@ h1 em{white-space:nowrap}
 <section class="hero"><div class="wrap hero-grid">
   <div>
     <p class="cap">100 jantares · comida cá de casa</p>
-    <h1>Chega de pagar <em>25 €</em> por um jantar que fazes em 15 minutos.</h1>
-    <p class="sub">No forno ou na air fryer. A ementa da semana já vem decidida — e a lista de compras também.</p>
+    <h1>Um take-away para dois custa mais do que <em>100 jantares.</em></h1>
+    <p class="sub">Chegas cansada e o telemóvel abre a app da comida. Uma noite para dois fica em cerca de 25 €. Aqui são 14,90 € por 100 jantares, prontos em 15 minutos.</p>
+    <div class="versus">
+      <div><span>Uma noite de take-away</span><b>25 €</b><small>um jantar, para dois</small></div>
+      <div class="us"><span>100 jantares em casa</span><b>14,90 €</b><small>pagamento único</small></div>
+    </div>
     <div class="row"><a class="btn" href="#oferta">Quero os 100 jantares</a></div>
     <p class="fine" style="margin-top:12px">Desde 14,90 € · IVA incluído · Garantia de 7 dias</p>
   </div>
@@ -142,7 +153,7 @@ h1 em{white-space:nowrap}
 <section class="dor"><div class="wrap">
   <div class="clock">19:30</div>
   <p>Chegas a casa e ninguém sabe o que vai ser o jantar.</p>
-  <p class="sub" style="color:rgba(246,239,230,.7);margin:12px auto 0">Outra vez massa com atum. Ou mais 25 € em comida pela app.</p>
+  <p class="sub" style="color:rgba(246,239,230,.7);margin:12px auto 0">Massa com atum outra vez. Ou cerca de 25 € na app. Não é falta de vontade. É falta de um plano.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -171,7 +182,7 @@ h1 em{white-space:nowrap}
 <section class="oferta" id="oferta"><div class="wrap">
   <div style="text-align:center">
     <p class="cap">Escolhe o teu plano</p>
-    <h2 class="h2" style="margin-top:8px">Menos do que um take-away para dois</h2>
+    <h2 class="h2" style="margin-top:8px">25 € por um jantar. Ou 14,90 € por 100.</h2>
   </div>
   <div class="anc">
     <div class="ln"><span>100 jantares + 4 ementas</span><b>14,90 €</b></div>
@@ -253,7 +264,7 @@ h1 em{white-space:nowrap}
 
 <section style="padding-top:0"><div class="wrap end">
   <div class="rule"></div>
-  <h2 class="h2">Hoje à noite já sabes o que vai ser o jantar.</h2>
+  <h2 class="h2">Hoje à noite não precisas de abrir a app da comida.</h2>
   <a class="btn" href="#oferta">Ver os planos</a>
   <p class="fine">Desde 14,90 € · Garantia de 7 dias</p>
 </div></section>
