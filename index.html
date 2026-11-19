@@ -7,320 +7,240 @@
 <meta name="description" content="100 jantares de comida cá de casa, prontos em 15 minutos, no forno ou na air fryer, com a ementa da semana já decidida.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
-<!-- META PIXEL: troca PIXEL_ID pelo ID do pixel novo de Portugal -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,560&family=Figtree:wght@400;500;600;700&display=swap">
 <script>
-(function(){var ID="1116820774050495";
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init',ID);fbq('track','PageView');fbq('track','ViewContent');
-document.addEventListener('click',function(e){var a=e.target.closest('.hotmart-fb');if(a)fbq('track','InitiateCheckout',{currency:'EUR',value:parseFloat(a.dataset.valor)})});})();
+fbq('init','1116820774050495');
+fbq('track','PageView');
+</script>
+<script>
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","zchomx0mio");
 </script>
 <style>
-/* Layout: editorial, uma coluna centrada, muito espaço; capa de livro de cozinha — serifa grande, linhas finas, rótulos em maiúsculas espaçadas */
 :root{
-  --bg:#f4ede2; --paper:#faf6ef; --ink:#2b2420; --muted:#7d6f63; --hair:rgba(43,36,32,.16);
-  --accent:#b8532f; --accent-ink:#faf6ef; --night:#211b17; --night-ink:#f3ebe0; --night-accent:#e58a63;
-  --display:"Young Serif",Georgia,"Times New Roman",serif;
-  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#f3ece3;--paper:#faf6f1;--ink:#241c17;--muted:#7a6a5e;--line:#e4d8cc;
+  --accent:#c2410c;--on:#fff7f2;--night:#1a1411;--night-ink:#f6efe6;--night-accent:#f0a07a;
+  --display:"Fraunces",Georgia,serif;--sans:"Figtree",system-ui,sans-serif;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1613;--paper:#231d19;--ink:#f0e7dc;--muted:#ab9d90;--hair:rgba(240,231,220,.16);--accent:#e58a63;--accent-ink:#1b1613;--night:#120e0c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1b1613;--paper:#231d19;--ink:#f0e7dc;--muted:#ab9d90;--hair:rgba(240,231,220,.16);--accent:#e58a63;--accent-ink:#1b1613;--night:#120e0c;color-scheme:dark}
-[hidden]{display:none!important}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
-h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;line-height:1.08;letter-spacing:-.005em}
+h1,h2,h3{font-family:var(--display);font-weight:460;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance}
 p{margin:0}
-.wrap{max-width:980px;margin:0 auto;padding-inline:24px}
-.wrap>*,.stack>*{min-width:0}
-section{padding-block:96px}
-.stack{display:grid;gap:18px}
-.center{text-align:center;justify-items:center}
-.cap{font-size:.72rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--accent)}
-.sub{color:var(--muted);font-size:1.05rem;max-width:30em}
-.small{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.rule{width:56px;height:1px;background:var(--ink);opacity:.3}
-.h2{font-size:clamp(2rem,6.4vw,3rem)}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;padding:19px 34px;border-radius:2px;border:1px solid var(--accent);transition:opacity .2s}
-.btn:hover{opacity:.88}
-.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+a{color:inherit}
+.wrap{width:min(1080px,calc(100% - 32px));margin-inline:auto}
+.cap{font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+.sub{color:var(--muted);font-size:17px;max-width:34em}
+.h2{font-size:clamp(32px,8vw,48px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:var(--accent);color:var(--on);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:14px 22px;border:1px solid var(--accent)}
 .btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
 .btn.full{width:100%}
-
-/* telemóvel */
-.phone{width:min(280px,72vw);aspect-ratio:390/780;border-radius:40px;background:#16110e;padding:9px;box-shadow:0 40px 60px -40px rgba(40,20,5,.45)}
-.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:32px}
-
-/* 1 hero */
-.hero{padding-block:40px 96px}
-.top{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:22px;border-bottom:1px solid var(--hair)}
-.brand{font-family:var(--display);font-size:1.05rem}
-@media (max-width:520px){.top .small{display:none}.top{justify-content:center}}
-.hero .in{display:grid;gap:30px;justify-items:center;text-align:center;padding-top:72px}
-.hero h1{font-size:clamp(2.7rem,10vw,5rem);max-width:12em}
+section{padding:56px 0}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;min-height:56px}
+.brand{font-family:var(--display);font-size:18px}
+.hero{padding-top:28px}
+.hero h1{font-size:clamp(36px,10vw,60px);margin:12px 0}
 .hero h1 em{font-style:normal;color:var(--accent)}
-.duo{margin:28px 0 0;display:grid;gap:12px;justify-items:center}
-.heroimg{width:min(560px,100%);aspect-ratio:1/1}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;width:min(420px,88vw);align-items:end}
-.pair .arch{width:100%;aspect-ratio:390/780;object-fit:cover;object-position:center top;border-radius:999px 999px 0 0}
-.pair .phone{width:100%}
-.duo figcaption{font-size:.68rem;color:var(--muted)}
-.hook{font-family:var(--display);font-size:1.15rem;color:var(--muted)}
-.hook b{font-weight:400;color:var(--ink)}
-
-/* 2 dor + mecanismo */
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
+.fine{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.phone{width:min(260px,72vw);margin:28px auto 0;background:var(--night);border-radius:36px;padding:8px}
+.phone img{width:100%;aspect-ratio:1/2;object-fit:contain;object-position:center top;background:var(--paper);border-radius:28px}
+.hero-grid{display:grid;gap:8px}
+@media(min-width:860px){
+  .hero-grid{grid-template-columns:1fr .8fr;align-items:center;gap:40px}
+  .phone{margin:0 0 0 auto}
+}
 .dor{background:var(--night);color:var(--night-ink);text-align:center}
-.dor .clock{font-family:var(--display);font-size:clamp(4.5rem,18vw,8rem);line-height:1;color:var(--night-accent);font-variant-numeric:tabular-nums}
-.dor p{font-family:var(--display);font-size:clamp(1.3rem,4.4vw,1.75rem);line-height:1.35;max-width:22em;margin-inline:auto}
-.dor .m{color:color-mix(in srgb,var(--night-ink) 55%,transparent)}
-.mec{display:grid;gap:56px;align-items:center;justify-items:center}
-@media (min-width:860px){.mec{grid-template-columns:auto 1fr;justify-items:start}}
-.steps{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--hair);width:100%}
-.steps li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:22px 0;border-bottom:1px solid var(--hair)}
-.steps .n{font-family:var(--display);font-size:1.6rem;color:var(--accent);line-height:1.2}
-.steps h3{font-size:1.35rem;margin-bottom:4px}
-.steps p{color:var(--muted)}
-.vsl{width:100%;max-width:420px;aspect-ratio:9/16;background:#000;justify-self:center}
-
-.para{list-style:none;margin:0;padding:0;width:100%;max-width:620px;border-top:1px solid var(--hair)}
-.para li{font-family:var(--display);font-size:clamp(1.15rem,4vw,1.4rem);line-height:1.35;padding:20px 0;border-bottom:1px solid var(--hair)}
-.recs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 16px}
-@media (min-width:760px){.recs{grid-template-columns:repeat(3,1fr)}}
-.recs .ph{aspect-ratio:4/3}
-.rec{display:grid;gap:10px}
-.rec b{font-family:var(--display);font-weight:400;font-size:1.05rem;line-height:1.2}
-.rec span{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-/* 3 carrossel */
-.car{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 24px 22px;margin-inline:-24px;scrollbar-width:none}
-.car::-webkit-scrollbar{display:none}
-.car figure{margin:0;flex:none;scroll-snap-align:center;display:grid;gap:16px;justify-items:center}
-.car .phone{width:min(230px,62vw)}
-.car figcaption{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;max-width:220px}
-.dots{display:flex;gap:10px;justify-content:center}
-.dots button{width:6px;height:6px;border-radius:50%;border:0;padding:0;background:var(--hair)}
-.dots button[aria-current="true"]{background:var(--ink)}
-.caps{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 20px}
-.cap-i{display:grid;gap:12px}
-.cap-i:last-child{grid-column:1/-1}
-.cap-i:last-child .ph{aspect-ratio:16/7}
-@media (min-width:860px){.caps{grid-template-columns:repeat(5,1fr)}.cap-i:last-child{grid-column:auto}.cap-i:last-child .ph{aspect-ratio:4/5}}
-.ph{aspect-ratio:4/5;background:var(--paper);border:1px solid var(--hair);display:grid;place-items:center;font-family:var(--display);font-size:1.8rem;color:var(--muted)}
-.ph.photo{background-size:cover;background-position:center;border:0}
-.ph.photo::after{content:none}
-.cap-i b{font-family:var(--display);font-weight:400;font-size:1.15rem;line-height:1.2}
-.cap-i span{font-size:.85rem;color:var(--muted)}
-
-/* 4 bónus */
-.bon{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 20px}
-@media (min-width:760px){.bon{grid-template-columns:repeat(3,1fr)}}
-.b{display:grid;gap:12px}
-.b .ph{aspect-ratio:1/1}
-.b .n{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.b h3{font-size:1.15rem;line-height:1.2}
-.b p{font-size:.85rem;color:var(--muted)}
-
-/* 6 oferta */
-.oferta{background:var(--paper);border-block:1px solid var(--hair)}
-.anc{max-width:520px;width:100%;margin-inline:auto;display:grid}
-.anc .row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--hair);font-variant-numeric:tabular-nums}
-.anc .row span{color:var(--muted)}
-.anc .row.first span{color:var(--ink)}
-.anc .tot{border-bottom:0;padding-top:18px}
-.anc .tot span{color:var(--ink);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
-.anc .tot s{color:var(--muted)}
-.anc .hoje{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-top:6px}
-.anc .hoje span{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.anc .hoje b{font-family:var(--display);font-weight:400;font-size:3rem;line-height:1;font-variant-numeric:tabular-nums}
-.anc .note{text-align:right;font-size:.8rem;color:var(--muted)}
-.plans{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:820px;margin-inline:auto;width:100%;align-items:stretch}
-.plan{border:1px solid var(--hair);background:var(--bg);padding:40px 32px;display:grid;gap:22px;align-content:start;text-align:center;justify-items:center}
-.plan.pro{order:-1}
-@media (min-width:700px){.plan.pro{order:0}}
-.plan.pro{background:var(--night);color:var(--night-ink);border-color:var(--night)}
+.dor .clock{font-family:var(--display);font-size:clamp(64px,18vw,96px);line-height:1;color:var(--night-accent)}
+.dor p{font-family:var(--display);font-size:clamp(22px,5vw,30px);max-width:18em;margin:12px auto 0}
+.steps{display:grid;gap:16px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:12px 12px 18px}
+.step .n{font-family:var(--display);font-size:32px;color:var(--accent);margin-top:10px}
+.step h3{font-size:22px;margin:4px 0}
+.step p{color:var(--muted);font-size:15px}
+.grid6{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(min-width:760px){.grid6{grid-template-columns:repeat(3,1fr)}}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--paper)}
+.card b{display:block;font-family:var(--display);font-weight:460;margin-top:8px;line-height:1.2}
+.card span{display:block;margin-top:4px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.oferta{background:var(--paper);border-block:1px solid var(--line)}
+.anc{max-width:440px;margin:20px auto 0}
+.anc .ln{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.anc .ln span{color:var(--muted)}
+.anc .tot{display:flex;justify-content:space-between;padding:12px 0;color:var(--muted)}
+.hoje{display:flex;justify-content:space-between;align-items:baseline}
+.hoje span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.hoje b{font-family:var(--display);font-weight:460;font-size:52px;line-height:1}
+.note{text-align:right;color:var(--muted);font-size:14px}
+.plans{display:flex;flex-direction:column;gap:14px;max-width:760px;margin:28px auto 0}
+.plan{order:2;border:1px solid var(--line);background:var(--bg);border-radius:16px;padding:28px 22px;text-align:center}
+.plan.pro{order:1;background:var(--night);color:var(--night-ink);border-color:var(--night)}
+@media(min-width:760px){
+  .plans{flex-direction:row}
+  .plan,.plan.pro{order:0;flex:1}
+}
+.plan .cap{color:var(--accent)}
 .plan.pro .cap{color:var(--night-accent)}
-.plan .p{font-family:var(--display);font-size:3.4rem;line-height:1;font-variant-numeric:tabular-nums}
-.plan .p small{display:block;font-family:var(--body);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.6;margin-top:12px}
-.plan ul{list-style:none;margin:0;padding:0;display:grid;width:100%;border-top:1px solid var(--hair)}
-.plan.pro ul{border-color:rgba(243,235,224,.16)}
-.plan li{padding:11px 0;border-bottom:1px solid var(--hair);font-size:.95rem}
-.plan.pro li{border-color:rgba(243,235,224,.16)}
-.plan li.plus{color:var(--night-accent)}
+.price{font-family:var(--display);font-size:48px;line-height:1;margin:10px 0}
+.price small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.65;margin-top:8px}
+.plan ul{list-style:none;margin:0;padding:0;text-align:left;border-top:1px solid var(--line)}
+.plan.pro ul{border-color:rgba(246,239,230,.16)}
+.plan li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.plan.pro li{border-color:rgba(246,239,230,.16)}
+.plan .g{font-size:13px;color:var(--muted);margin-top:8px}
+.plan.pro .g{color:rgba(246,239,230,.7)}
 .plan.pro .btn{background:var(--night-accent);border-color:var(--night-accent);color:var(--night)}
-.pay{font-size:.8rem;color:var(--muted);text-align:center;max-width:36em;margin-inline:auto}
-
-/* 7 garantia */
-.gar{display:grid;gap:14px;justify-items:center;text-align:center;max-width:560px;margin-inline:auto;padding:56px 32px;border:1px solid var(--hair)}
-.gar .d{font-family:var(--display);font-size:4.5rem;line-height:1;color:var(--accent)}
-
-/* 8 faq */
-.faq{max-width:720px;margin-inline:auto;width:100%;border-top:1px solid var(--hair)}
-.faq details{border-bottom:1px solid var(--hair)}
-.faq summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:16px;font-family:var(--display);font-size:1.15rem}
+.pay{text-align:center;color:var(--muted);font-size:14px;max-width:36em;margin:18px auto 0}
+.gar{max-width:520px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:16px;padding:36px 20px}
+.gar .d{font-family:var(--display);font-size:72px;line-height:1;color:var(--accent)}
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(min-width:860px){.caps{grid-template-columns:repeat(5,1fr)}}
+.faq{max-width:720px;margin:0 auto;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;display:flex;justify-content:space-between;gap:12px;font-family:var(--display);font-size:20px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--body);font-weight:400;color:var(--accent);font-size:1.4rem;line-height:1}
+.faq summary::after{content:"+";color:var(--accent);font-size:24px}
 .faq details[open] summary::after{content:"–"}
-.faq details p{padding-bottom:22px;color:var(--muted)}
-
-/* 9 apresentadora */
-.bio{display:grid;gap:36px;justify-items:center;text-align:center;max-width:820px;margin-inline:auto}
-@media (min-width:760px){.bio{grid-template-columns:auto 1fr;justify-items:start;text-align:left;gap:56px}}
-.ines{margin:0;display:grid;gap:10px;justify-items:center}
-.ines img{width:min(300px,78vw);aspect-ratio:3/4;object-fit:cover;object-position:top}
-.ines figcaption{font-size:.68rem;letter-spacing:.06em;color:var(--muted)}
-
-footer{padding-block:48px 120px;border-top:1px solid var(--hair);font-size:.8rem;color:var(--muted)}
+.faq p{color:var(--muted);padding-bottom:16px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px;padding:28px 0 110px}
 footer .wrap{display:grid;gap:8px}
-footer a{color:inherit}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);border-top:1px solid var(--hair);padding:12px 24px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:18px;align-items:center;justify-content:space-between;transform:translateY(110%);transition:transform .3s}
-.sticky.on{transform:none}
-.sticky .t{font-family:var(--display);font-size:1.1rem}
-.sticky .t small{display:block;font-family:var(--body);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.sticky .btn{padding:14px 20px;font-size:.8rem}
-@media (min-width:760px){.sticky{justify-content:center;gap:40px}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky{transition:none}}
-.g7{margin:10px 0 0;text-align:center;font-size:12.5px;letter-spacing:.04em;opacity:.75}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sticky.hide{transform:translateY(110%)}
+.sticky b{font-family:var(--display);font-weight:460;font-size:20px;display:block;line-height:1}
+.sticky small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.end{text-align:center;display:grid;gap:16px;justify-items:center}
+.rule{width:56px;height:1px;background:var(--ink);opacity:.3}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+figure{margin:0}
+h1 em{white-space:nowrap}
+@media(max-width:759px){
+ .step{display:grid;grid-template-columns:118px 1fr;column-gap:16px;align-items:center;padding:12px}
+ .step .phone{width:118px!important;margin:0!important;border-radius:20px;padding:4px;grid-row:1/4}
+ .step .phone img{border-radius:16px}
+ .step .n{margin-top:0;font-size:26px}
+ .step h3{font-size:19px}
+}
 </style>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "zchomx0mio");
-</script>
 </head>
 <body>
+<header class="top"><div class="wrap"><span class="brand">Jantares em 15 Minutos</span><a class="btn" href="#oferta">Ver planos</a></div></header>
 
-
-<!-- 1. HERO -->
-<header class="hero"><div class="wrap">
-  <div class="top"><span class="brand">Jantares em 15 Minutos</span><span class="small">Air fryer · Forno</span></div>
-  <div class="in">
-    <span class="cap">100 jantares · comida cá de casa</span>
-    <h1>Pronto em <em>15 minutos.</em></h1>
-    <p class="sub">No forno ou na air fryer. A ementa da semana já vem decidida.</p>
-    <a class="btn" href="#oferta">Quero os 100 jantares</a>
-    <p class="small" style="letter-spacing:.16em">Desde 14,90 € · IVA incluído · Garantia de 7 dias</p>
-    <div class="phone" style="margin-top:28px"><img src="img/hero-app.webp" fetchpriority="high" alt="O app com a lista de receitas e o seletor air fryer ou forno"></div>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="cap">100 jantares · comida cá de casa</p>
+    <h1>Chega de pagar <em>25 €</em> por um jantar que fazes em 15 minutos.</h1>
+    <p class="sub">No forno ou na air fryer. A ementa da semana já vem decidida — e a lista de compras também.</p>
+    <div class="row"><a class="btn" href="#oferta">Quero os 100 jantares</a></div>
+    <p class="fine" style="margin-top:12px">Desde 14,90 € · IVA incluído · Garantia de 7 dias</p>
   </div>
-</div></header>
+  <div class="phone"><img src="img/hero-app.webp" alt="O app com a lista de receitas e o seletor air fryer ou forno"></div>
+</div></section>
 
-<!-- 2. DOR + MECANISMO + VSL -->
-<section class="dor"><div class="wrap stack center" style="gap:28px">
+<section class="dor"><div class="wrap">
   <div class="clock">19:30</div>
   <p>Chegas a casa e ninguém sabe o que vai ser o jantar.</p>
-  <p class="m">Outra vez massa com atum. Ou mais 25 € em comida pela app.</p>
+  <p class="sub" style="color:rgba(246,239,230,.7);margin:12px auto 0">Outra vez massa com atum. Ou mais 25 € em comida pela app.</p>
 </div></section>
 
-<section style="padding-bottom:0"><div class="wrap stack center" style="gap:28px">
-  <span class="cap">É para ti se</span>
-  <ul class="para">
-    <li>Chegas a casa cansada e sem ideias para o jantar.</li>
-    <li>Estás farta de repetir sempre os mesmos pratos.</li>
-    <li>Pedes comida mais vezes do que gostavas.</li>
-    <li>Tens air fryer e só a usas para batatas.</li>
-  </ul>
-</div></section>
-
-<section><div class="wrap mec">
-  <div class="phone"><img src="img/img01.webp" loading="lazy" alt="Passos do Bacalhau à Brás com cronómetro"></div>
-  <div class="stack" style="gap:32px;width:100%">
-    <div class="stack" style="gap:14px"><span class="cap">Como funciona</span><h2 class="h2">Tu só cozinhas.</h2></div>
-    <ol class="steps">
-      <li><span class="n">1</span><div><h3>Escolhe air fryer ou forno</h3><p>Os tempos mudam sozinhos.</p></div></li>
-      <li><span class="n">2</span><div><h3>Carrega no cronómetro</h3><p>O telemóvel avisa quando está pronto.</p></div></li>
-      <li><span class="n">3</span><div><h3>Abre a ementa da semana</h3><p>Jantares e lista de compras já feitos.</p></div></li>
-    </ol>
-    <p class="hook">Bacalhau à Brás, <b>10 minutos</b>. Na air fryer.</p>
-  </div>
-  <!-- VSL: quando tiveres o vídeo, apaga hidden e põe o ficheiro em src -->
-  <video class="vsl" src="video-vsl.mp4" playsinline controls preload="none" hidden></video>
-</div></section>
-
-<!-- 3. CARROSSEL DO PRODUTO -->
-<section style="background:var(--paper);border-block:1px solid var(--hair)"><div class="wrap stack" style="gap:48px">
-  <div class="stack center" style="gap:14px"><span class="cap">Por dentro</span><h2 class="h2">Um app no telemóvel.<br>Não um PDF esquecido.</h2></div>
-  <div class="car" id="car">
-    <figure><div class="phone"><img src="img/img02.webp" alt="Lista de receitas" loading="lazy"></div><figcaption>100 receitas</figcaption></figure>
-    <figure><div class="phone"><img src="img/img03.webp" alt="Ficha de uma receita" loading="lazy"></div><figcaption>Tempo e temperatura</figcaption></figure>
-    <figure><div class="phone"><img src="img/img04.webp" alt="Receitas no modo forno" loading="lazy"></div><figcaption>Sem air fryer? Forno</figcaption></figure>
-    <figure><div class="phone"><img src="img/img05.webp" alt="Ementa da semana" loading="lazy"></div><figcaption>Ementa da semana</figcaption></figure>
-    <figure><div class="phone"><img src="img/img06.webp" alt="Lista de compras" loading="lazy"></div><figcaption>Lista de compras</figcaption></figure>
-  </div>
-  <div class="dots" id="dots"></div>
-  <div class="stack" style="gap:28px;margin-top:24px">
-    <div class="stack center" style="gap:14px"><span class="cap">Air fryer</span><h2 class="h2">Algumas receitas</h2></div>
-    <div class="recs"><div class="rec"><div class="ph photo" data-img="r-frango-limao" style="background-image:url(img/r-frango-limao.webp)"></div><b>Bifinhos de frango com limão</b><span>10 min · 200 °C</span></div><div class="rec"><div class="ph photo" data-img="r-pica-pau" style="background-image:url(img/r-pica-pau.webp)"></div><b>Pica-pau rápido</b><span>10 min · 200 °C</span></div><div class="rec"><div class="ph photo" data-img="r-salmao" style="background-image:url(img/r-salmao.webp)"></div><b>Salmão com crosta de ervas</b><span>9 min · 200 °C</span></div><div class="rec"><div class="ph photo" data-img="r-almondegas" style="background-image:url(img/r-almondegas.webp)"></div><b>Almôndegas com tomate</b><span>11 min · 190 °C</span></div><div class="rec"><div class="ph photo" data-img="r-douradinhos" style="background-image:url(img/r-douradinhos.webp)"></div><b>Douradinhos caseiros</b><span>10 min · 200 °C</span></div><div class="rec"><div class="ph photo" data-img="r-espetadas" style="background-image:url(img/r-espetadas.webp)"></div><b>Espetadas de frango</b><span>12 min · 200 °C</span></div></div>
+<section><div class="wrap">
+  <p class="cap">Como funciona</p>
+  <h2 class="h2" style="margin:8px 0 20px">Tu só cozinhas.</h2>
+  <div class="steps">
+    <article class="step"><div class="phone" style="margin:0 auto"><img src="img/img04.webp" alt="Receitas no modo forno"></div><div class="n">1</div><h3>Escolhe air fryer ou forno</h3><p>Os tempos mudam sozinhos.</p></article>
+    <article class="step"><div class="phone" style="margin:0 auto"><img src="img/img03.webp" alt="Ficha de uma receita com cronómetro"></div><div class="n">2</div><h3>Carrega no cronómetro</h3><p>O telemóvel avisa quando está pronto.</p></article>
+    <article class="step"><div class="phone" style="margin:0 auto"><img src="img/img05.webp" alt="Ementa da semana"></div><div class="n">3</div><h3>Abre a ementa da semana</h3><p>Jantares e lista de compras já feitos.</p></article>
   </div>
 </div></section>
 
-<!-- 6. OFERTA -->
-<section class="oferta" id="oferta"><div class="wrap stack" style="gap:56px">
-  <div class="stack center" style="gap:14px"><span class="cap">Escolhe o teu plano</span><h2 class="h2">Menos do que um take-away para dois</h2></div>
+<section style="padding-top:0"><div class="wrap">
+  <p class="cap">Algumas receitas</p>
+  <h2 class="h2" style="margin:8px 0 18px">Seis jantares. Todos em cerca de 15 minutos.</h2>
+  <div class="grid6">
+    <figure class="card"><img src="img/r-frango-limao.webp" alt="Bifinhos de frango com limão"><b>Bifinhos de frango com limão</b><span>10 min · 200 °C</span></figure>
+    <figure class="card"><img src="img/r-pica-pau.webp" alt="Pica-pau rápido"><b>Pica-pau rápido</b><span>10 min · 200 °C</span></figure>
+    <figure class="card"><img src="img/r-salmao.webp" alt="Salmão com crosta de ervas"><b>Salmão com crosta de ervas</b><span>9 min · 200 °C</span></figure>
+    <figure class="card"><img src="img/r-almondegas.webp" alt="Almôndegas com tomate"><b>Almôndegas com tomate</b><span>11 min · 190 °C</span></figure>
+    <figure class="card"><img src="img/r-douradinhos.webp" alt="Douradinhos caseiros"><b>Douradinhos caseiros</b><span>10 min · 200 °C</span></figure>
+    <figure class="card"><img src="img/r-espetadas.webp" alt="Espetadas de frango"><b>Espetadas de frango</b><span>12 min · 200 °C</span></figure>
+  </div>
+</div></section>
+
+<section class="oferta" id="oferta"><div class="wrap">
+  <div style="text-align:center">
+    <p class="cap">Escolhe o teu plano</p>
+    <h2 class="h2" style="margin-top:8px">Menos do que um take-away para dois</h2>
+  </div>
   <div class="anc">
-    <div class="row first"><span>100 jantares + 4 ementas</span><b>14,90 €</b></div>
-    <div class="row"><span>+ 6 bónus do Premium</span><b style="white-space:nowrap">29,40 €</b></div>
-    <div class="row tot"><span>Valor total</span><s>44,30 €</s></div>
+    <div class="ln"><span>100 jantares + 4 ementas</span><b>14,90 €</b></div>
+    <div class="ln"><span>+ 6 bónus do Premium</span><b>29,40 €</b></div>
+    <div class="tot"><span>Valor total</span><s>44,30 €</s></div>
     <div class="hoje"><span>Hoje</span><b>19,90 €</b></div>
     <p class="note">no plano Premium · ou 14,90 € só com os jantares</p>
   </div>
   <div class="plans">
-    <div class="plan">
-      <span class="cap">Básico</span>
-      <div class="p">14,90 €<small>Pagamento único · IVA incluído</small></div>
-      <ul><li>100 jantares em 15 minutos</li><li>Air fryer e forno</li><li>4 ementas com lista de compras</li><li>Cronómetro e favoritos</li></ul>
+    <article class="plan">
+      <p class="cap">Básico</p>
+      <div class="price">14,90 €<small>Pagamento único · IVA incluído</small></div>
+      <ul>
+        <li>100 jantares em 15 minutos</li>
+        <li>Air fryer e forno</li>
+        <li>4 ementas com lista de compras</li>
+        <li>Cronómetro e favoritos</li>
+      </ul>
       <a class="btn line full hotmart-fb" data-valor="14.90" href="https://pay.hotmart.com/H108103289E">Quero o Básico</a>
-      <p class="g7">Garantia de 7 dias · devolvemos tudo</p>
-    </div>
-    <div class="plan pro">
-      <span class="cap">Premium · Recomendado</span>
-      <div class="p">19,90 €<small>Pagamento único · IVA incluído</small></div>
-      <ul><li>Tudo o que está no Básico</li><li class="plus">+ 6 bónus</li><li>Sopas, marmitas e petiscos</li><li>Sobremesas e pequenos-almoços</li><li>Guia da air fryer</li></ul>
+      <p class="g">Garantia de 7 dias · devolvemos tudo</p>
+    </article>
+    <article class="plan pro">
+      <p class="cap">Premium · Recomendado</p>
+      <div class="price">19,90 €<small>Pagamento único · IVA incluído</small></div>
+      <ul>
+        <li>Tudo o que está no Básico</li>
+        <li>+ 6 bónus</li>
+        <li>Sopas, marmitas e petiscos</li>
+        <li>Sobremesas e pequenos-almoços</li>
+        <li>Guia da air fryer</li>
+      </ul>
       <a class="btn full hotmart-fb" data-valor="19.90" href="https://pay.hotmart.com/C108103905I">Quero o Premium</a>
-      <p class="g7">Garantia de 7 dias · devolvemos tudo</p>
-    </div>
+      <p class="g">Garantia de 7 dias · devolvemos tudo</p>
+    </article>
   </div>
   <p class="pay">Pagamento seguro pela Hotmart · MB WAY, Multibanco, cartão, Apple Pay, Google Pay ou PayPal · Acesso por email logo após o pagamento</p>
 </div></section>
 
-<!-- 7. GARANTIA -->
 <section><div class="wrap">
-  <div class="gar"><span class="d">7</span><span class="cap">dias de garantia</span><p class="sub">Não gostaste? Devolvemos o dinheiro todo. Sem perguntas.</p></div>
+  <div class="gar"><div class="d">7</div><p class="cap">dias de garantia</p><p class="sub" style="margin:8px auto 0">Não gostaste? Devolvemos o dinheiro todo. Sem perguntas.</p></div>
 </div></section>
 
-<!-- CAPÍTULOS -->
-<section><div class="wrap stack" style="gap:28px">
-  <div class="stack" style="gap:28px">
-    <div class="stack center" style="gap:14px"><span class="cap">5 capítulos · 20 receitas cada</span><h2 class="h2">O que vais cozinhar</h2></div>
-    <div class="caps">
-      <div class="cap-i"><div class="ph photo" data-img="cap-frango" style="background-image:url(img/cap-frango.webp)"></div><b>Frango</b><span>Bifinhos com limão, caril, nuggets</span></div>
-      <div class="cap-i"><div class="ph photo" data-img="cap-carne" style="background-image:url(img/cap-carne.webp)"></div><b>Carne</b><span>Almôndegas, strogonoff, borrego</span></div>
-      <div class="cap-i"><div class="ph photo" data-img="cap-peixe" style="background-image:url(img/cap-peixe.webp)"></div><b>Peixe e bacalhau</b><span>Salmão, pescada com broa</span></div>
-      <div class="cap-i"><div class="ph photo" data-img="cap-massas" style="background-image:url(img/cap-massas.webp)"></div><b>Massas, arroz e ovos</b><span>Gnocchi, arroz frito, fritada</span></div>
-      <div class="cap-i"><div class="ph photo" data-img="cap-sempre" style="background-image:url(img/cap-sempre.webp)"></div><b>Pratos de sempre</b><span>Bacalhau à Brás, bifanas, pica-pau</span></div>
-    </div>
+<section style="padding-top:0"><div class="wrap">
+  <p class="cap">5 capítulos · 20 receitas cada</p>
+  <h2 class="h2" style="margin:8px 0 18px">O que vais cozinhar</h2>
+  <div class="caps">
+    <figure class="card"><img src="img/cap-frango.webp" alt=""><b>Frango</b><span>Bifinhos com limão, caril, nuggets</span></figure>
+    <figure class="card"><img src="img/cap-carne.webp" alt=""><b>Carne</b><span>Almôndegas, strogonoff, borrego</span></figure>
+    <figure class="card"><img src="img/cap-peixe.webp" alt=""><b>Peixe e bacalhau</b><span>Salmão, pescada com broa</span></figure>
+    <figure class="card"><img src="img/cap-massas.webp" alt=""><b>Massas, arroz e ovos</b><span>Gnocchi, arroz frito, fritada</span></figure>
+    <figure class="card"><img src="img/cap-sempre.webp" alt=""><b>Pratos de sempre</b><span>Bacalhau à Brás, bifanas, pica-pau</span></figure>
   </div>
 </div></section>
 
-<!-- 4. BÓNUS -->
-<section><div class="wrap stack" style="gap:48px">
-  <div class="stack center" style="gap:14px"><span class="cap">Plano Premium</span><h2 class="h2">E ainda 6 bónus</h2></div>
-  <div class="bon">
-    <div class="b"><div class="ph photo" data-img="bonus-sopas" style="background-image:url(img/bonus-sopas.webp)"></div><span class="n">Bónus 1</span><h3>Sopas da semana</h3><p>8 sopas para a semana toda</p></div>
-    <div class="b"><div class="ph photo" data-img="bonus-marmitas" style="background-image:url(img/bonus-marmitas.webp)"></div><span class="n">Bónus 2</span><h3>Marmitas para congelar</h3><p>Cozinha uma vez, janta três</p></div>
-    <div class="b"><div class="ph photo" data-img="bonus-petiscos" style="background-image:url(img/bonus-petiscos.webp)"></div><span class="n">Bónus 3</span><h3>Petiscos rápidos</h3><p>Para visitas e noite de futebol</p></div>
-    <div class="b"><div class="ph photo" data-img="bonus-sobremesas" style="background-image:url(img/bonus-sobremesas.webp)"></div><span class="n">Bónus 4</span><h3>Sobremesas rápidas</h3><p>Doce sem batedeira</p></div>
-    <div class="b"><div class="ph photo" data-img="bonus-pequenos" style="background-image:url(img/bonus-pequenos.webp)"></div><span class="n">Bónus 5</span><h3>Pequenos-almoços em 5 minutos</h3><p>Para as manhãs com pressa</p></div>
-    <div class="b"><div class="ph photo" data-img="bonus-guia" style="background-image:url(img/bonus-guia.webp)"></div><span class="n">Bónus 6</span><h3>Guia rápido da air fryer</h3><p>Tempos e regras de ouro</p></div>
+<section style="padding-top:0"><div class="wrap">
+  <p class="cap">Plano Premium</p>
+  <h2 class="h2" style="margin:8px 0 18px">E ainda 6 bónus</h2>
+  <div class="grid6">
+    <figure class="card"><img src="img/bonus-sopas.webp" alt=""><span>Bónus 1</span><b>Sopas da semana</b><span>8 sopas para a semana toda</span></figure>
+    <figure class="card"><img src="img/bonus-marmitas.webp" alt=""><span>Bónus 2</span><b>Marmitas para congelar</b><span>Cozinha uma vez, janta três</span></figure>
+    <figure class="card"><img src="img/bonus-petiscos.webp" alt=""><span>Bónus 3</span><b>Petiscos rápidos</b><span>Para visitas e noite de futebol</span></figure>
+    <figure class="card"><img src="img/bonus-sobremesas.webp" alt=""><span>Bónus 4</span><b>Sobremesas rápidas</b><span>Doce sem batedeira</span></figure>
+    <figure class="card"><img src="img/bonus-pequenos.webp" alt=""><span>Bónus 5</span><b>Pequenos-almoços em 5 minutos</b><span>Para as manhãs com pressa</span></figure>
+    <figure class="card"><img src="img/bonus-guia.webp" alt=""><span>Bónus 6</span><b>Guia rápido da air fryer</b><span>Tempos e regras de ouro</span></figure>
   </div>
 </div></section>
 
-<!-- 5. PROVA SOCIAL: escondida até haver depoimentos reais -->
-<section class="prova" hidden><div class="wrap stack center"><span class="cap">Quem já usa</span><h2 class="h2">O que dizem as clientes</h2></div></section>
-
-<!-- 8. FAQ -->
-<section style="padding-top:0"><div class="wrap stack" style="gap:40px">
-  <h2 class="h2" style="text-align:center">Perguntas frequentes</h2>
+<section style="padding-top:0"><div class="wrap">
+  <h2 class="h2" style="text-align:center;margin-bottom:12px">Perguntas frequentes</h2>
   <div class="faq">
     <details><summary>É um livro físico?</summary><p>Não. É um app que abres no telemóvel pelo link do email.</p></details>
     <details><summary>Não tenho air fryer. Serve?</summary><p>Serve. Todas as receitas têm tempos para forno.</p></details>
@@ -331,42 +251,45 @@ footer a{color:inherit}
   </div>
 </div></section>
 
-<!-- 9. APRESENTADORA (personagem de IA) -->
-<section style="padding-top:0"><div class="wrap">
-  <div class="bio">
-    <figure class="ines"><img src="img/ines.webp" loading="lazy" alt="A Inês, apresentadora do Jantares em 15 Minutos, numa cozinha"><figcaption>Personagem criada com IA</figcaption></figure>
-    <div class="stack" style="gap:14px"><span class="cap">Quem te mostra as receitas</span><h2 class="h2">Esta é a Inês.</h2><p class="sub">É ela que te mostra cada prato nos vídeos, passo a passo.</p></div>
-  </div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap stack center" style="gap:26px">
+<section style="padding-top:0"><div class="wrap end">
   <div class="rule"></div>
   <h2 class="h2">Hoje à noite já sabes o que vai ser o jantar.</h2>
   <a class="btn" href="#oferta">Ver os planos</a>
-  <p class="small" style="letter-spacing:.16em">Desde 14,90 € · Garantia de 7 dias</p>
+  <p class="fine">Desde 14,90 € · Garantia de 7 dias</p>
 </div></section>
 
 <footer><div class="wrap">
   <p>Jantares em 15 Minutos · Produto digital vendido e entregue pela Hotmart. Preços com IVA incluído.</p>
   <p>A Inês é uma personagem digital criada com inteligência artificial para representar a marca.</p>
-  <p><a href="/termos.html">Termos de utilização</a> · <a href="/privacidade.html">Política de privacidade</a> · <a href="/contacto.html">Contacto</a></p>
+  <p><a href="termos.html">Termos de utilização</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="contacto.html">Contacto</a></p>
 </div></footer>
 
-<div class="sticky" id="sticky"><div class="t">Desde 14,90 €<small>Pagamento único</small></div><a class="btn" href="#oferta">Ver os planos</a></div>
+<div class="sticky" id="sticky"><div><b>Desde 14,90 €</b><small>Pagamento único</small></div><a class="btn" href="#oferta">Ver os planos</a></div>
 
 <script>
 (function(){
-  var car=document.getElementById('car'),dots=document.getElementById('dots'),figs=car.querySelectorAll('figure');
-  figs.forEach(function(f,i){var b=document.createElement('button');b.setAttribute('aria-label','Ecrã '+(i+1));b.onclick=function(){f.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})};dots.appendChild(b)});
-  function upd(){var c=car.scrollLeft+car.clientWidth/2,best=0,d=1e9;figs.forEach(function(f,i){var m=Math.abs(f.offsetLeft+f.offsetWidth/2-c);if(m<d){d=m;best=i}});dots.querySelectorAll('button').forEach(function(b,i){b.setAttribute('aria-current',i===best)})}
-  car.addEventListener('scroll',upd,{passive:true});upd();
-  var st=document.getElementById('sticky'),of=document.getElementById('oferta');
-  function s(){var r=of.getBoundingClientRect();st.classList.toggle('on',window.scrollY>600&&(r.top>window.innerHeight||r.bottom<0))}
-  window.addEventListener('scroll',s,{passive:true});s();
-  /* passa os parâmetros UTM do anúncio para o checkout */
-  var qs=location.search.slice(1);if(qs)document.querySelectorAll('.hotmart-fb').forEach(function(a){if(a.href.indexOf('http')===0)a.href+=(a.href.indexOf('?')>-1?'&':'?')+qs});
+  var qs=location.search.slice(1);
+  if(qs) document.querySelectorAll('.hotmart-fb').forEach(function(a){
+    if(a.href.indexOf('http')===0) a.href+=(a.href.indexOf('?')>-1?'&':'?')+qs;
+  });
+  document.querySelectorAll('.hotmart-fb').forEach(function(a){
+    a.addEventListener('click',function(){
+      if(window.fbq) fbq('track','InitiateCheckout',{currency:'EUR',value:parseFloat(a.dataset.valor)});
+    });
+  });
+  var offer=document.getElementById('oferta');
+  var sticky=document.getElementById('sticky');
+  var seen=false;
+  if('IntersectionObserver' in window && offer){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        sticky.classList.toggle('hide', e.isIntersecting);
+        if(e.isIntersecting && !seen){ seen=true; if(window.fbq) fbq('track','ViewContent'); }
+      });
+    },{threshold:0.35});
+    io.observe(offer);
+  }
 })();
 </script>
-
 </body>
 </html>
